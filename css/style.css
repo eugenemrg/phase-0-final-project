@@ -1,0 +1,52 @@
+/* Setting up custom properties */
+:root {
+
+    /* Colours */
+
+    --primary-colour-dark: #000;
+    --secondary-colour-dark-1: #000814;
+    --secondary-colour-dark-2: #001D3D;
+    --secondary-colour-dark-3: #003566;
+    --primary-colour-light: #fff;
+    --secondary-colour-light-1: #E5E5E5;
+    --secondary-colour-light-2: #FFD60A;
+    --secondary-colour-dark-3: #FFC300;
+
+    /* Spacing */
+    --level-1-padding: 16px 48px;
+    --level-2-padding: 8px 16px;
+
+    /* Navigation item spacing */
+    --nav-item-padding: 16px;
+    --nav-item-border: 1px solid var(--secondary-colour-dark);
+    --nav-item-margin: 0px;
+
+    /* Input elements */
+    --input-element-padding: 0px;
+    --input-element-border: 0px;
+    --input-element-margin: 0px;
+}
+
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Default image styling */
+img{
+    display: block;
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+    max-height: auto;
+}
+
+/* Default link styling */
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-colour-dark);
+}
+
