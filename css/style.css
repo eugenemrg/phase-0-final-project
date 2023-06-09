@@ -163,19 +163,20 @@ a {
     padding: var(--level-2-padding-no-leftright);
 }
 
-/* CONTACT FORM */
-.contact{
+/* NEWSLETTER AND CONTACT FORM */
+.contact, .newsletter{
+    border-bottom: 1px solid var(--primary-colour-dark);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: var(--level-1-padding);
 }
 
-.contact-form{
+.contact-form, .newsletter-form{
     width: 600px;
 }
 
-.contact-form *{
+.contact-form *, .newsletter-form *{
     font-size: 1em;
 }
 
@@ -195,5 +196,4 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     color: var(--secondary-colour-light-3);
-    border-color: var(--secondary-colour-light-3);
 }
