@@ -18,7 +18,10 @@
 
     /* Spacing */
     --level-1-padding: 16px 48px;
+    --level-1-padding--no-topbottom: 0px 48px;
     --level-2-padding: 8px 16px;
+    --level-2-padding-no-leftright: 16px 0px;
+    --level-2-padding-no-topbottom: 0px 16px;
 
     /* Navigation item spacing */
     --nav-item-padding: 12px 8px;
@@ -58,6 +61,7 @@ a {
 .navigation-container{
     padding: var(--level-1-padding);
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .logo-text{
@@ -84,4 +88,34 @@ a {
 
 .nav-item:hover::after{
     background: var(--secondary-colour-light-3);
+}
+
+/* Hero section */
+.hero{
+    padding: var(--level-1-padding--no-topbottom);
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+
+.hero-content{
+    flex: 1 1 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+.hero-image{
+    flex: 1 1 40%;
+    object-fit: contain;
+}
+
+.headline{
+    font-size: 5.6em;
+}
+
+.sub-heading{
+    font-size: 1.5em;
+    padding: var(--level-2-padding-no-leftright);
 }
