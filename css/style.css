@@ -121,14 +121,16 @@ a {
     display: flex;
     flex-direction: row;
     height: 80vh;
+    border-bottom: 1px solid black;
 }
 
 .hero-content{
-    flex: 1 1 60%;
+    flex: 1 1 55%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
+    padding: 24px;
 }
 
 .hero-content .decorate{
@@ -141,21 +143,20 @@ a {
 }
 
 .hero-image{
-    flex: 1 1 40%;
+    flex: 1 1 45%;
+    padding: 24px;
     object-fit: contain;
+    border-left: 1px solid black;
 }
 
 .headline{
     font-size: 3.6em;
 }
 
-/* .headline b{
-    display: inline-block;
-    background-color: var(--secondary-colour-dark-3);
-    margin: 8px;
-    padding: 0px 16px;
-    color: var(--secondary-colour-light-3);
-} */
+.brief{
+    font-size: 2em;
+    padding: var(--level-2-padding-no-leftright);
+}
 
 .sub-heading{
     font-size: 1em;
