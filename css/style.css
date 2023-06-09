@@ -1,6 +1,10 @@
 /* Setting up custom properties */
 :root {
 
+    /* Fonts */
+    --logo-font-family: 'Unica One', cursive;
+    --primary-font-family: 'Roboto', sans-serif;
+
     /* Colours */
 
     --primary-colour-dark: #000;
@@ -10,14 +14,14 @@
     --primary-colour-light: #fff;
     --secondary-colour-light-1: #E5E5E5;
     --secondary-colour-light-2: #FFD60A;
-    --secondary-colour-dark-3: #FFC300;
+    --secondary-colour-light-3: #FFC300;
 
     /* Spacing */
     --level-1-padding: 16px 48px;
     --level-2-padding: 8px 16px;
 
     /* Navigation item spacing */
-    --nav-item-padding: 16px;
+    --nav-item-padding: 12px 8px;
     --nav-item-border: 1px solid var(--secondary-colour-dark);
     --nav-item-margin: 0px;
 
@@ -32,7 +36,7 @@
     border: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font-family);
 }
 
 /* Default image styling */
@@ -51,6 +55,33 @@ a {
     color: var(--primary-colour-dark);
 }
 
-.logo-text {
-    font-family: 'Yeseva One', cursive;
+.navigation-container{
+    padding: var(--level-1-padding);
+    text-align: center;
+}
+
+.logo-text{
+    display: inline-block;
+    font-size: 2em;
+    font-family: var(--logo-font-family);
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: var(--nav-item-padding);
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.nav-item::after{
+    position: relative;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: none;
+}
+
+.nav-item:hover::after{
+    background: var(--secondary-colour-light-3);
 }
