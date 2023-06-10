@@ -128,7 +128,7 @@ a {
     height: 640px;
     border-bottom: 1px solid black;
     background-color: var(--secondary-colour-light-3);
-    background-image: url('../img/hero-background-wide.png');
+    background-image: url('../img/hero-background-wide-x1920.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -355,4 +355,21 @@ footer * {
 
 .footer-section ul .link-item:hover {
     color: var(--secondary-colour-light-3);
+}
+
+/* TEAM SECTION */
+.team{
+    width: 100%;
+    overflow-x: scroll;
+    padding: var(--level-1-padding);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid var(--primary-colour-dark);
+}
+
+.member{
+    display: inline-block;
+    width: 320px;
+    flex: 1 0 320px;
 }
