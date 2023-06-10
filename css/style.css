@@ -358,18 +358,58 @@ footer * {
 }
 
 /* TEAM SECTION */
-.team{
+.team {
     width: 100%;
-    overflow-x: scroll;
     padding: var(--level-1-padding);
+    border-bottom: 1px solid var(--primary-colour-dark);
+    display: flex;
+    flex-direction: row;
+}
+
+.team-header{
+    padding: 48px;
+}
+
+.members-section {
+    width: 100%;
+    overflow-x: auto;
+    padding: 48px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    border-bottom: 1px solid var(--primary-colour-dark);
+    ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
-.member{
+.members-section::-webkit-scrollbar{
+    display: none;
+}
+
+.member {
     display: inline-block;
-    width: 320px;
+    max-width: 240px;
     flex: 1 0 320px;
+    text-align: center;
+}
+
+.member-photo {
+    border-radius: 50%;
+    padding: 24px;
+}
+
+.member-name {}
+
+.member-role {
+    font-family: var(--logo-font-family);
+    padding: 4px;
+}
+
+.member-contact {}
+
+.member-contact a {
+    font-size: 1.2em;
+    margin-right: 4px;
+    padding: 6px;
 }
