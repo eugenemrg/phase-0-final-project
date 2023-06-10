@@ -58,6 +58,11 @@ a {
     color: var(--primary-colour-dark);
 }
 
+.section-header{
+    font-size: 3.2em;
+    text-align: center;text-transform: uppercase;
+}
+
 /* Navigation Section */
 
 .navigation-container{
@@ -121,7 +126,7 @@ a {
     padding: var(--level-1-padding--no-topbottom);
     height: 640px;
     border-bottom: 1px solid black;
-    background-color: #FFC300;
+    background-color:var(--secondary-colour-light-3);
     background-image: url('../img/hero-background-wide.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -162,6 +167,61 @@ a {
     color: var(--secondary-colour-light-3);
 }
 
+/* ABOUT SECTION */
+
+.company-logo-mention-intext{
+    display: inline-block;
+    font-family: var(--logo-font-family);
+    font-weight: bold;
+}
+
+.company-logo-mention-intext::after{
+    position: relative;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: var(--secondary-colour-light-3);
+}
+
+.about{
+    padding: var(--level-1-padding);
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+
+.about-header{
+    flex: 1 0 20%;
+    padding: 48px;
+}
+
+.section-header-label{
+    font-size: 1.5em;
+    font-family: var(--logo-font-family);
+    display: inline-block;
+    border-bottom: 2px solid var(--secondary-colour-light-3);
+}
+
+.section-header-content{
+    font-size: 4.8em;
+    font-family: var(--logo-font-family);
+}
+
+.about-content{
+    flex: 1 0 80%;
+    font-size: 1.5em;
+    padding: 48px;
+}
+
+.about-content p{
+    margin-bottom: 24px;
+}
+
+.about-content p:last-child{
+    margin-bottom: 0px;
+}
+
 /* NEWSLETTER AND CONTACT FORM */
 .contact, .newsletter{
     border-bottom: 1px solid var(--primary-colour-dark);
@@ -173,6 +233,7 @@ a {
 
 .contact-form, .newsletter-form{
     width: 600px;
+    margin-bottom: 48px;
 }
 
 .contact-form *, .newsletter-form *{
@@ -196,4 +257,20 @@ input[type="submit"]{
 input[type="submit"]:hover{
     color: var(--secondary-colour-light-3);
     /* box-shadow: 6px 6px 0px -2px var(--secondary-colour-light-3); */
+}
+
+/* Newsletter */
+.newsletter-header, .contact-header{
+    margin-top: 48px;
+}
+.newsletter-info, .contact-section-info{
+    font-size: 1em;
+    padding: 24px 48px;
+    text-align: center;
+}
+
+/* Testimonials */
+.testimonials{
+    padding: var(--level-1-padding);
+    border-bottom: 1px solid var(--primary-colour-dark);
 }
