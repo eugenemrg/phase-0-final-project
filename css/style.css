@@ -393,14 +393,10 @@ footer * {
     padding: 24px;
 }
 
-.member-name {}
-
 .member-role {
     font-family: var(--logo-font-family);
     padding: 4px;
 }
-
-.member-contact {}
 
 .member-contact a {
     font-size: 1.2em;
