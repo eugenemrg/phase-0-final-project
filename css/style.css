@@ -348,10 +348,6 @@ footer * {
     list-style-type: none;
 }
 
-.footer-section .link-list{
-    margin-bottom: 16px;
-}
-
 .footer-section ul .link-item {
     padding: 6px 0px;
 }
