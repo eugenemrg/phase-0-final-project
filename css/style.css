@@ -62,12 +62,12 @@ a {
 
 .navigation-container{
     text-align: center;
-    border-bottom: 1px solid var(--secondary-colour-dark-2);
+    /* border-bottom: 1px solid var(--secondary-colour-dark-2); */
 }
 
 .logo{
     padding: 4px 0px 8px 0px;
-    border-bottom: 1px solid var(--secondary-colour-dark-2);
+    /* border-bottom: 1px solid var(--secondary-colour-dark-2); */
 }
 
 .logo-text{
@@ -90,6 +90,7 @@ a {
     padding: 8px;
     font-size: 1em;
     text-transform: uppercase;
+    font-family: var(--logo-font-family);
 }
 
 .nav-item::after{
@@ -118,49 +119,43 @@ a {
 /* Hero section */
 .hero{
     padding: var(--level-1-padding--no-topbottom);
-    display: flex;
-    flex-direction: row;
-    height: 80vh;
+    height: 640px;
     border-bottom: 1px solid black;
-}
+    background-color: #FFC300;
+    background-image: url('../img/hero-background-wide.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
 
-.hero-content{
-    flex: 1 1 55%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    padding: 24px;
-}
-
-.hero-content .decorate{
-    border-bottom: 2px solid var(--secondary-colour-light-3);
-}
-
-.fa-arrow-up-right-from-square{
-    font-size: 0.6em;
-    color: var(--secondary-colour-light-3);
-}
-
-.hero-image{
-    flex: 1 1 45%;
-    padding: 24px;
-    object-fit: contain;
-    border-left: 1px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .headline{
-    font-size: 3.6em;
-}
-
-.brief{
-    font-size: 2em;
-    padding: var(--level-2-padding-no-leftright);
+    font-size: 6em;
+    font-weight: bold;
+    text-align: center;
+    padding: 32px 64px;
+    color: var(--primary-colour-light);
 }
 
 .sub-heading{
     font-size: 1em;
+    text-align: center;
     padding: var(--level-2-padding-no-leftright);
+    color: var(--primary-colour-light);
+}
+
+.sub-heading .decorate{
+    color: var(--primary-colour-light);
+    border-bottom: 2px solid var(--secondary-colour-light-3);
+}
+
+.fa-arrow-up-right-from-square{
+    font-size: 0.8em;
+    color: var(--secondary-colour-light-3);
 }
 
 /* NEWSLETTER AND CONTACT FORM */
@@ -196,4 +191,5 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     color: var(--secondary-colour-light-3);
+    /* box-shadow: 6px 6px 0px -2px var(--secondary-colour-light-3); */
 }
