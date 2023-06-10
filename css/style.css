@@ -326,6 +326,7 @@ footer * {
     text-transform: uppercase;
     color: white;
     padding: 8px 0px;
+    font-family: var(--logo-font-family);
 }
 
 .socials a {
