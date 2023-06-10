@@ -197,7 +197,7 @@ a {
 }
 
 .section-header-label{
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: var(--logo-font-family);
     display: inline-block;
     border-bottom: 2px solid var(--secondary-colour-light-3);
