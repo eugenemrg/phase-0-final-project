@@ -62,12 +62,12 @@ a {
 
 .navigation-container{
     text-align: center;
-    /* border-bottom: 1px solid var(--secondary-colour-dark-2); */
+    border-bottom: 1px solid var(--secondary-colour-dark-2);
 }
 
 .logo{
     padding: 4px 0px 8px 0px;
-    /* border-bottom: 1px solid var(--secondary-colour-dark-2); */
+    border-bottom: 1px solid var(--secondary-colour-dark-2);
 }
 
 .logo-text{
@@ -123,9 +123,9 @@ a {
     border-bottom: 1px solid black;
     background-color: #FFC300;
     background-image: url('../img/hero-background-wide.png');
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
@@ -151,6 +151,10 @@ a {
 .sub-heading .decorate{
     color: var(--primary-colour-light);
     border-bottom: 2px solid var(--secondary-colour-light-3);
+}
+
+.sub-heading .decorate:hover{
+    color: var(--secondary-colour-light-3);
 }
 
 .fa-arrow-up-right-from-square{
