@@ -463,3 +463,11 @@ footer * {
 .footer-section ul .link-item:hover {
     color: var(--secondary-colour-light-3);
 }
+
+.footer-website-info {
+    padding: var(--level-1-padding);
+}
+
+.footer-website-info a {
+    border-bottom: 2px solid var(--secondary-colour-light-3);
+}

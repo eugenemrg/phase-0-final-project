@@ -1,27 +1,27 @@
-let cards = document.querySelectorAll('.testimonial-content');
-let activeCardsDisplayed = document.querySelectorAll('.active-testimonial');
-
-let indicators = document.querySelectorAll('.indicator');
-let activeIndicator = document.querySelectorAll('.active-indicator');
+const CARDS = document.querySelectorAll('.testimonial-content');
+const INDICATORS = document.querySelectorAll('.indicator');
 
 setInterval(() => {
-    let activeCardIndex = [...cards].indexOf(activeCardsDisplayed[0]);
-    let currentCard = activeCardIndex + 1;
-    if(currentCard >= cards.length ){
+
+    let activeCardsDisplayed = document.querySelectorAll('.active-testimonial');
+    let activeIndicators = document.querySelectorAll('.active-indicator');
+    let activeCardIndex = [...CARDS].indexOf(activeCardsDisplayed[0]);
+
+    [...activeCardsDisplayed].forEach(card => {
+        card.classList.remove('active-testimonial');
+    });
+
+    [...activeIndicators].forEach(indicator => {
+        indicator.classList.remove('active-indicator');
+    });
+
+    if (CARDS[activeCardIndex].nextElementSibling === null) {
         // activate first card
-        cards[0].classList.toggle('active-testimonial');
-        indicators[0].classList.toggle('active-indicator');
-        // deactivate last card
-        cards[activeCardIndex].classList.toggle('active-testimonial');
-        indicators[activeCardIndex].classList.toggle('active-indicator');
+        CARDS[0].classList.toggle('active-testimonial');
+        INDICATORS[0].classList.toggle('active-indicator');
     } else {
         // activate new card
-        cards[activeCardIndex].nextElementSibling.classList.toggle('active-testimonial');
-        indicators[activeCardIndex].nextElementSibling.classList.toggle('active-indicator');
-        // deactivate old card
-        cards[activeCardIndex].classList.toggle('active-testimonial');
-        indicators[activeCardIndex].classList.toggle('active-indicator');
+        CARDS[activeCardIndex].nextElementSibling.classList.toggle('active-testimonial');
+        INDICATORS[activeCardIndex].nextElementSibling.classList.toggle('active-indicator');
     }
-}, 15000);
-
-// [...cards].indexOf(active[0])
+}, 12000);
