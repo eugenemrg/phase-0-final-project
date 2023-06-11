@@ -24,4 +24,4 @@ setInterval(() => {
         CARDS[activeCardIndex].nextElementSibling.classList.toggle('active-testimonial');
         INDICATORS[activeCardIndex].nextElementSibling.classList.toggle('active-indicator');
     }
-}, 12000);
+}, 15000);

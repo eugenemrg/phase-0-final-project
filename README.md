@@ -2,15 +2,18 @@
 
 **BUDDY & CO. WEBSITE**
 
+
 ## Introduction
 
 **'Buddy & Co.'** is multinational pet food company and a global leader in pet nutrition.
+
 
 ## Languages
 
 - HTML
 - CSS
 - JavaScript
+
 
 ## Link to deployment
 
