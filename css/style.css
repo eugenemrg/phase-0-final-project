@@ -423,7 +423,7 @@ footer * {
     flex-direction: row;
 }
 
-.footer-section {
+.footer-section-container {
     flex: 1 0 25%;
 }
 
@@ -465,9 +465,21 @@ footer * {
 }
 
 .footer-website-info {
-    padding: var(--level-1-padding);
+    padding: 24px 0px;
 }
 
 .footer-website-info a {
     border-bottom: 2px solid var(--secondary-colour-light-3);
+}
+
+/* center content inside flex items for balance */
+.footer-section{
+    display: inline-block;
+}
+
+.footer-section-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
 }
